@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <title></title>
-    <script src="js/mui.min.js"></script>
-    <link href="css/mui.min.css" rel="stylesheet"/>
-	<link rel="stylesheet" href="css/index.css">
-    <script type="text/javascript" charset="utf-8">
-      	mui.init();
-    </script>
-</head>
-<body class="login">
-	<div class="mui-content">
-		<form>
-			<div class="mui-input-row">
-				<label>账号</label>
-				<input type="text" placeholder="填写手机号码">
-			</div>
-			<div class="mui-input-row mui-password">
-				<label>密码</label>
-				<input type="password" class="mui-input-password" placeholder="输入密码">
-			</div>
-			<div class="mui-content-padded">
-			    <button type="button" class="mui-btn mui-btn-block">登录</button>
-				<button type="button" class="mui-btn mui-btn-block">注册</button>
-			</div>
-			<div class="mui-content-padded forget-password">
-				<button type="button" class="mui-btn mui-btn-outlined">忘记密码</button>
-			</div>
-		</form>
-	</div>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/index.css">
+		<script type="text/javascript" charset="utf-8">
+			mui('#register').on('tap', '#register', foo_1)
+
+			function foo_1() {
+				console.log("foo_1 execute");
+			}
+			mui.init();
+		</script>
+	</head>
+	<body class="login">
+		<div class="mui-content">
+			<form>
+				<div class="mui-input-row">
+					<label>账号</label>
+					<input type="text" placeholder="填写手机号码">
+				</div>
+				<div class="mui-input-row mui-password">
+					<label>密码</label>
+					<input type="password" class="mui-input-password" placeholder="输入密码">
+				</div>
+				<div class="mui-content-padded">
+					<button type="button" class="mui-btn mui-btn-block">
+						<a href="">登录</a>
+					</button>
+					<button type="button" class="mui-btn mui-btn-block" id="register">
+						<a href="pages/register.html" style="display: block;">注册</a>
+					</button>
+				</div>
+				<div class="mui-content-padded forget-password">
+					<button type="button" class="mui-btn mui-btn-outlined">忘记密码</button>
+				</div>
+			</form>
+		</div>
+	</body>
 </html>

@@ -15,9 +15,7 @@ label {
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-
 	color: rgba(255, 255, 255, 0.54);
-
 }
 
 input:-moz-placeholder,
@@ -41,11 +39,18 @@ textarea:-ms-input-placeholder {
 
 }
 
+.mui-input-row .mui-input-clear~.mui-icon-clear.mui-active,
+.mui-input-row .mui-input-password~.mui-icon-eye.mui-active,
+.mui-input-row .mui-input-speech~.mui-icon-speech.mui-active {
+	color: #ffffff;
+}
+
+.mui-bar-nav {
+	background: #FFFFFF;
+}
+
 /* login S */
 .login {
-	/* background-image: url(../images/bg-denglux1.png);
-	background-repeat: no-repeat;
-	background-size: 100% 100%; */
 	position: relative;
 }
 
@@ -86,7 +91,7 @@ textarea:-ms-input-placeholder {
 }
 
 .login>div>form>.mui-content-padded {
-	margin: 28px 0 16px 0;
+	margin: 15px 0 16px 0;
 	border: none;
 }
 
@@ -116,11 +121,124 @@ textarea:-ms-input-placeholder {
 	font-size: 14px;
 	border: none;
 }
-
-@media only screen and (max-width: 375px) {
-	.login>div>form{
-		top: 45%;
-	}
+.login>div>form .mui-btn-block a{
+	color: #000000;
 }
 
+
+
 /* login E */
+
+/* register S */
+.register input::-webkit-input-placeholder,
+.register textarea::-webkit-input-placeholder{
+	color: #CCCCCC;
+}
+.register .mui-bar-nav,
+.register .mui-bar-nav a {
+	color: #111111;
+}
+.register .mui-bar-nav{
+	border-bottom: 1px solid #979797;
+}
+.register>div>form label,
+.register>div>form input {
+	padding: 15px 10px;
+	font-size: 17px;
+}
+.register>div>form label{
+	padding-left: 0;
+	color: #000000;
+}
+.register>div>form input{
+	padding: 10px 0;
+	height: 48px;
+}
+.register form{
+	background: #FFFFFF;
+}
+.register form .mui-input-row{
+	margin: 0 10px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.register form .mui-input-row:last-child{
+	border-bottom: none;
+}
+.register .mui-input-row label{
+	width: 25%;
+}
+.register .mui-input-row input{
+	width: 75%;
+}
+
+.register form .mui-input-row:first-child{
+	display: flex;
+}
+.register form .mui-input-row:first-child label ,.register form .mui-input-row:first-child input{
+	float: none;
+}
+.register form .mui-input-row:first-child label{
+	width: 25%;
+}
+.register form .mui-input-row:first-child input{
+	width: 45%;
+}
+.register form .mui-input-row:first-child button{
+	width: 30%;
+	font-size: 17px;
+	color: #58BC3D;
+	border: none;
+	border-radius: 0;
+	position: relative;
+}
+.register form .mui-input-row:first-child button:before{
+	content: '';
+	height: 20px;
+	width: 1px;
+	background: #CCCCCC;
+	display: inline-block;
+	position: absolute;
+	top: 14px;
+	left: 0;
+}.register>div>.mui-content-padded:first-child{
+	margin-bottom: 17px;
+}
+.register>div>.mui-content-padded .mui-btn-block {
+	padding: 11px 0;
+	border-radius: 5px;
+	border: none;
+	background-image: linear-gradient(0deg, #FFEF3F 0%, #FFFE64 100%);
+}
+.register>div>.mui-content-padded p{
+	text-align: center;
+	color: #999999;
+	font-size: 12px;
+}
+.register div .mui-content-padded p span{
+	color: #58BC3D;
+}
+/* register E */
+
+
+
+
+
+/* iphone5 S */
+@media only screen and (max-width: 350px) {
+	.login>div>form {
+		top: 45%;
+	}
+	.register .mui-input-row label{
+		font-size: 15px;
+	}
+	.register .mui-input-row input{
+		font-size: 15px;
+	}
+	.register form .mui-input-row:first-child button{
+		font-size: 15px;
+	}
+	.register>div>form input{
+		height: 46px;
+	}
+}
+/* iphone5 E */
