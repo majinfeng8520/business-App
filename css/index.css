@@ -1,0 +1,126 @@
+/* 通用 */
+* {
+	font-family: PingFangSC-Regular;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+label {
+	color: #FFFFFF;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+
+	color: rgba(255, 255, 255, 0.54);
+
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+
+	color: rgba(255, 255, 255, 0.54);
+
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+
+	color: rgba(255, 255, 255, 0.54);
+
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+
+	color: rgba(255, 255, 255, 0.54);
+
+}
+
+/* login S */
+.login {
+	/* background-image: url(../images/bg-denglux1.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%; */
+	position: relative;
+}
+
+.login>.mui-content {
+	background-image: url(../images/bg-denglux1.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 100%;
+}
+
+.login>div>form {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%);
+	width: 95%;
+}
+
+.login>div>form>div {
+	margin: 10px 0 10px 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.54);
+	;
+}
+
+.login>div>form label,
+.login>div>form input {
+	padding: 10px 5px;
+	font-size: 17px;
+}
+
+.login>div>form label {
+	width: 20%;
+}
+
+.login>div>form input {
+	width: 80%;
+	color: #FFFFFF;
+}
+
+.login>div>form>.mui-content-padded {
+	margin: 28px 0 16px 0;
+	border: none;
+}
+
+.login>div>form>.mui-content-padded .mui-btn-block {
+	padding: 11px 0;
+	border-radius: 5px;
+	border: none;
+}
+
+.login>div>form>.mui-content-padded .mui-btn-block:first-child {
+	background-image: linear-gradient(0deg, #FFEF3F 0%, #FFFE64 100%);
+}
+
+.login>div>form>.mui-content-padded .mui-btn-block:last-child {
+	background: #F0F0F0;
+	margin-top: 15px;
+}
+
+.login>div>form>.forget-password {
+	margin: 0;
+	text-align: center;
+}
+
+.login>div>form>.forget-password button {
+	padding: 0;
+	color: rgba(255, 255, 255, 0.54);
+	font-size: 14px;
+	border: none;
+}
+
+@media only screen and (max-width: 375px) {
+	.login>div>form{
+		top: 45%;
+	}
+}
+
+/* login E */
