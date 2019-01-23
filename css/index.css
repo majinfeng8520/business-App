@@ -20,23 +20,17 @@ textarea::-webkit-input-placeholder {
 
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-
 	color: rgba(255, 255, 255, 0.54);
-
 }
 
 input::-moz-placeholder,
 textarea::-moz-placeholder {
-
 	color: rgba(255, 255, 255, 0.54);
-
 }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-
 	color: rgba(255, 255, 255, 0.54);
-
 }
 
 .mui-input-row .mui-input-clear~.mui-icon-clear.mui-active,
@@ -47,6 +41,11 @@ textarea:-ms-input-placeholder {
 
 .mui-bar-nav {
 	background: #FFFFFF;
+}
+
+.mui-bar-nav,
+.mui-bar-nav a {
+	color: #111111;
 }
 
 /* login S */
@@ -121,7 +120,8 @@ textarea:-ms-input-placeholder {
 	font-size: 14px;
 	border: none;
 }
-.login>div>form .mui-btn-block a{
+
+.login>div>form .mui-btn-block a {
 	color: #000000;
 }
 
@@ -131,59 +131,71 @@ textarea:-ms-input-placeholder {
 
 /* register S */
 .register input::-webkit-input-placeholder,
-.register textarea::-webkit-input-placeholder{
+.register textarea::-webkit-input-placeholder {
 	color: #CCCCCC;
 }
-.register .mui-bar-nav,
-.register .mui-bar-nav a {
-	color: #111111;
-}
-.register .mui-bar-nav{
+
+
+
+.register .mui-bar-nav {
 	border-bottom: 1px solid #979797;
 }
+
 .register>div>form label,
 .register>div>form input {
 	padding: 15px 10px;
 	font-size: 17px;
 }
-.register>div>form label{
+
+.register>div>form label {
 	padding-left: 0;
 	color: #000000;
 }
-.register>div>form input{
+
+.register>div>form input {
 	padding: 10px 0;
 	height: 48px;
 }
-.register form{
+
+.register form {
 	background: #FFFFFF;
 }
-.register form .mui-input-row{
+
+.register form .mui-input-row {
 	margin: 0 10px;
 	border-bottom: 1px solid #e5e5e5;
 }
-.register form .mui-input-row:last-child{
+
+.register form .mui-input-row:last-child {
 	border-bottom: none;
 }
-.register .mui-input-row label{
+
+.register .mui-input-row label {
 	width: 25%;
 }
-.register .mui-input-row input{
+
+.register .mui-input-row input {
 	width: 75%;
 }
 
-.register form .mui-input-row:first-child{
+.register form .mui-input-row:first-child {
 	display: flex;
 }
-.register form .mui-input-row:first-child label ,.register form .mui-input-row:first-child input{
+
+.register form .mui-input-row:first-child label,
+.register form .mui-input-row:first-child input {
 	float: none;
 }
-.register form .mui-input-row:first-child label{
+
+.register form .mui-input-row:first-child label {
 	width: 25%;
 }
-.register form .mui-input-row:first-child input{
+
+.register form .mui-input-row:first-child input {
 	width: 45%;
 }
-.register form .mui-input-row:first-child button{
+
+.register form .mui-input-row:first-child button {
 	width: 30%;
 	font-size: 17px;
 	color: #58BC3D;
@@ -191,7 +203,8 @@ textarea:-ms-input-placeholder {
 	border-radius: 0;
 	position: relative;
 }
-.register form .mui-input-row:first-child button:before{
+
+.register form .mui-input-row:first-child button:before {
 	content: '';
 	height: 20px;
 	width: 1px;
@@ -200,26 +213,113 @@ textarea:-ms-input-placeholder {
 	position: absolute;
 	top: 14px;
 	left: 0;
-}.register>div>.mui-content-padded:first-child{
+}
+
+.register>div>.m-btn {
+	margin: 0;
+	width: 93%;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.register>div>.mui-content-padded:first-child {
 	margin-bottom: 17px;
 }
+
 .register>div>.mui-content-padded .mui-btn-block {
 	padding: 11px 0;
 	border-radius: 5px;
 	border: none;
 	background-image: linear-gradient(0deg, #FFEF3F 0%, #FFFE64 100%);
 }
-.register>div>.mui-content-padded p{
+
+.register>div>.mui-content-padded p {
 	text-align: center;
 	color: #999999;
 	font-size: 12px;
 }
-.register div .mui-content-padded p span{
+
+.register div .mui-content-padded p span {
 	color: #58BC3D;
 }
+
 /* register E */
 
+/* registerBusiness S */
+.registerBusiness input::-webkit-input-placeholder,
+.registerBusiness textarea::-webkit-input-placeholder {
+	color: #CCCCCC;
+}
+.registerBusiness .mui-bar-nav {
+	border-bottom: 1px solid #979797;
+}
 
+.registerBusiness>div>form label,
+.registerBusiness>div>form input {
+	padding: 15px 10px;
+	font-size: 17px;
+}
+
+.registerBusiness>div>form label {
+	padding-left: 0;
+	color: #000000;
+}
+
+.registerBusiness>div>form input {
+	padding: 10px 0;
+	height: 48px;
+}
+
+.registerBusiness form {
+	background: #FFFFFF;
+}
+
+.registerBusiness form .mui-input-row {
+	margin: 0 10px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.registerBusiness form .mui-input-row:last-child {
+	border-bottom: none;
+}
+.registerBusiness .mui-input-row label {
+	width: 30%;
+}
+
+.registerBusiness .mui-input-row input {
+	width: 70%;
+}
+.registerBusiness>div>.m-btn {
+	margin: 0;
+	width: 93%;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.registerBusiness>div>.mui-content-padded:first-child {
+	margin-bottom: 17px;
+}
+
+.registerBusiness>div>.mui-content-padded .mui-btn-block {
+	padding: 11px 0;
+	border-radius: 5px;
+	border: none;
+	background-image: linear-gradient(0deg, #FFEF3F 0%, #FFFE64 100%);
+}
+
+.registerBusiness>div>.mui-content-padded p {
+	text-align: center;
+	color: #999999;
+	font-size: 12px;
+}
+
+.registerBusiness div .mui-content-padded p span {
+	color: #58BC3D;
+}
+/* registerBusiness E */
 
 
 
@@ -228,17 +328,29 @@ textarea:-ms-input-placeholder {
 	.login>div>form {
 		top: 45%;
 	}
-	.register .mui-input-row label{
+
+	.register .mui-input-row label,
+	.registerBusiness .mui-input-row label {
 		font-size: 15px;
 	}
-	.register .mui-input-row input{
+
+	.register .mui-input-row input,
+	.registerBusiness .mui-input-row input {
 		font-size: 15px;
 	}
-	.register form .mui-input-row:first-child button{
+
+	.register form .mui-input-row:first-child button {
 		font-size: 15px;
 	}
-	.register>div>form input{
-		height: 46px;
+
+	.register>div>form input,.registerBusiness .mui-input-row input {
+		height: 44px;
 	}
+
+	.register>div>.m-btn,.registerBusiness>div>.m-btn {
+		top: 45%;
+	}
+
 }
+
 /* iphone5 E */

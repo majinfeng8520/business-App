@@ -44,6 +44,11 @@ mui.plusReady(function() {
 				success: function(data) {
 					if (data.coed == 1) {
 						plus.nativeUI.closeWaiting()
+						
+						// 解析objcet为JSON格式
+						console.log(JSON.stringify(data));
+						
+						// 页面跳转
 						mui.openWindow({
 							url: "pages/Home.html"
 						})
