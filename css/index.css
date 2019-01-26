@@ -90,7 +90,6 @@ textarea:-ms-input-placeholder {
 }
 
 .login>div>form>.mui-content-padded {
-	margin: 15px 0 16px 0;
 	border: none;
 }
 
@@ -232,6 +231,7 @@ textarea:-ms-input-placeholder {
 	padding: 11px 0;
 	border-radius: 5px;
 	border: none;
+	box-shadow: 0 6px 7px 0 #E4E4E4;
 	background-image: linear-gradient(0deg, #FFEF3F 0%, #FFFE64 100%);
 }
 
@@ -252,6 +252,7 @@ textarea:-ms-input-placeholder {
 .registerBusiness textarea::-webkit-input-placeholder {
 	color: #CCCCCC;
 }
+
 .registerBusiness .mui-bar-nav {
 	border-bottom: 1px solid #979797;
 }
@@ -280,9 +281,11 @@ textarea:-ms-input-placeholder {
 	margin: 0 10px;
 	border-bottom: 1px solid #e5e5e5;
 }
+
 .registerBusiness form .mui-input-row:last-child {
 	border-bottom: none;
 }
+
 .registerBusiness .mui-input-row label {
 	width: 30%;
 }
@@ -290,6 +293,7 @@ textarea:-ms-input-placeholder {
 .registerBusiness .mui-input-row input {
 	width: 70%;
 }
+
 .registerBusiness>div>.m-btn {
 	margin: 0;
 	width: 93%;
@@ -319,35 +323,187 @@ textarea:-ms-input-placeholder {
 .registerBusiness div .mui-content-padded p span {
 	color: #58BC3D;
 }
+
 /* registerBusiness E */
 
+/* forgetPassword S */
+.forgetPassword input::-webkit-input-placeholder,
+.forgetPassword textarea::-webkit-input-placeholder {
+	color: #CCCCCC;
+}
 
+
+
+.forgetPassword .mui-bar-nav {
+	border-bottom: 1px solid #979797;
+}
+
+.forgetPassword>div>form label,
+.forgetPassword>div>form input {
+	padding: 15px 10px;
+	font-size: 17px;
+}
+
+.forgetPassword>div>form label {
+	padding-left: 0;
+	color: #000000;
+}
+
+.forgetPassword>div>form input {
+	padding: 10px 0;
+	height: 48px;
+}
+
+.forgetPassword form {
+	background: #FFFFFF;
+}
+
+.forgetPassword form .mui-input-row {
+	margin: 0 10px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.forgetPassword form .mui-input-row:last-child {
+	border-bottom: none;
+}
+
+.forgetPassword .mui-input-row label {
+	width: 25%;
+}
+
+.forgetPassword .mui-input-row input {
+	width: 75%;
+}
+
+.forgetPassword form .mui-input-row:first-child {
+	display: flex;
+}
+
+.forgetPassword form .mui-input-row:first-child label,
+.forgetPassword form .mui-input-row:first-child input {
+	float: none;
+}
+
+.forgetPassword form .mui-input-row:first-child label {
+	width: 25%;
+}
+
+.forgetPassword form .mui-input-row:first-child input {
+	width: 45%;
+}
+
+.forgetPassword form .mui-input-row:first-child button {
+	width: 30%;
+	font-size: 17px;
+	color: #58BC3D;
+	border: none;
+	border-radius: 0;
+	position: relative;
+}
+
+.forgetPassword form .mui-input-row:first-child button:before {
+	content: '';
+	height: 20px;
+	width: 1px;
+	background: #CCCCCC;
+	display: inline-block;
+	position: absolute;
+	top: 14px;
+	left: 0;
+}
+
+.forgetPassword>div>.mui-content-padded .mui-btn-block {
+	border: none;
+	padding: 11px 0;
+	border-radius: 5px;
+	box-shadow: 0 6px 7px 0 #E4E4E4;
+}
+
+.forgetPassword>div>.m-btn {
+	margin: 0;
+	width: 93%;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+/* forgetPassword E */
+/* replacePassword S */
+.replacePassword input::-webkit-input-placeholder,
+.replacePassword textarea::-webkit-input-placeholder {
+	color: #CCCCCC;
+}
+
+.replacePassword>div>form input {
+	padding: 10px;
+	height: 48px;
+	margin-bottom: 0;
+	border: none;
+}
+
+.replacePassword form .mui-input-row {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.replacePassword>div>.mui-content-padded .mui-btn-block {
+	border: none;
+	padding: 11px 0;
+	border-radius: 5px;
+	box-shadow: 0 6px 7px 0 #E4E4E4;
+	background-image: linear-gradient(0deg, #FFEF3F 0%, #FFFE64 100%);
+}
+
+.replacePassword>div>.m-btn {
+	margin: 0;
+	width: 93%;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+/* replacePassword E */
 
 /* iphone5 S */
 @media only screen and (max-width: 350px) {
+	.login>div>form>.mui-content-padded {
+		margin: 15px 0 16px 0;
+		border: none;
+	}
 	.login>div>form {
-		top: 45%;
+		top: 50%;
 	}
 
 	.register .mui-input-row label,
-	.registerBusiness .mui-input-row label {
+	.registerBusiness .mui-input-row label,
+	.forgetPassword .mui-input-row label {
 		font-size: 15px;
 	}
 
 	.register .mui-input-row input,
-	.registerBusiness .mui-input-row input {
+	.registerBusiness .mui-input-row input,
+	.forgetPassword .mui-input-row input,
+	.replacePassword>div>form input {
 		font-size: 15px;
 	}
 
-	.register form .mui-input-row:first-child button {
+	.register form .mui-input-row:first-child button,
+	.forgetPassword form .mui-input-row:first-child button {
 		font-size: 15px;
 	}
 
-	.register>div>form input,.registerBusiness .mui-input-row input {
+	.register>div>form input,
+	.registerBusiness>div>form input,
+	.replacePassword>div>form input,
+	.forgetPassword>div>form input{
 		height: 44px;
 	}
 
-	.register>div>.m-btn,.registerBusiness>div>.m-btn {
+	.register>div>.m-btn,
+	.registerBusiness>div>.m-btn,
+	.replacePassword>div>.m-btn,
+	.forgetPassword>div>.m-btn{
 		top: 45%;
 	}
 

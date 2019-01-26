@@ -7,7 +7,7 @@ mui.plusReady(function() {
 	var btn_register = document.getElementById('register') //注册按钮
 	var inpt_mobile = document.getElementById('inpt_mobile') //手机号
 	var input_pwd = document.getElementById('input_pwd') //密码
-	// var btn_forget=document.getElementById('forget')
+	var btn_forget=document.getElementById('forget')
 
 	//登录
 	btn_login.addEventListener('tap', function() {
@@ -68,6 +68,12 @@ mui.plusReady(function() {
 	btn_register.addEventListener('tap', function() {
 		mui.openWindow({
 			url: 'pages/register.html'
+		})
+	})
+	// 忘记密码
+	btn_forget.addEventListener('tap', function(){
+		mui.openWindow({
+			url: 'pages/forgetPassword.html'
 		})
 	})
 })
