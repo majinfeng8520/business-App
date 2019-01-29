@@ -465,6 +465,112 @@ textarea:-ms-input-placeholder {
 
 /* replacePassword E */
 
+/* home S */
+.home .mui-bar-nav.mui-bar .mui-icon-plus{
+	margin-right: 2px;
+}
+.home .mui-content{
+	padding-top: 0;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.home .mui-content .businessinformation{
+	height: 30%;
+	/* background-image: linear-gradient(-150deg, #F28E4F 0%, #F3385B 100%); */
+	background-image: url(../images/bg-shouye.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.home .mui-content .businessinformation h2{
+	display: inline-block;
+	font-size: 30px;
+	padding: 30px 15px;
+	background-color: #FFFFFF;
+	border-radius: 150%;
+	position: absolute;
+	top: 30%;
+	left: 13%;
+	transform: translate(-13%);
+}
+.home .mui-content .businessinformation h1{
+	display: inline-block;
+	font-size: 14px;
+	color: #FFFFFF;
+	position: absolute;
+	top: 83%;
+	left: 13%;
+	transform: translate(-13%);
+}
+.home .mui-content .businessinformation p{
+	margin-bottom: 0;
+	position: absolute;
+	top: 55%;
+	right: 5%;
+	transform: translate(-5%);
+	color: #FFFFFF;
+}
+.home .mui-content .businessinformation p strong{
+	font-size: 28px;
+}
+.home .mui-content .businesscoupon ul{
+	padding-left: 0;
+	margin: 0 auto;
+}
+.home .mui-content .businesscoupon ul li{
+	list-style: none;
+	margin: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-image: url(../images/quan-daijin.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding: 12px 0;
+}
+.home .mui-content .businesscoupon ul li div{
+	display: block;
+}
+.home .mui-content .businesscoupon ul li div:first-child{
+	width: 30%;
+}
+.home .mui-content .businesscoupon ul li div:nth-child(2){
+	width: 60%;
+}
+.home .mui-content .businesscoupon ul li div:last-child{
+	width: 10%;
+}
+.home .mui-content .businesscoupon ul li h4{
+	font-size: 14px;
+	margin: 0 0 7px 0;
+}
+.home .mui-content .businesscoupon ul li p{
+	font-size: 11px;
+	color: #999999;
+	margin-bottom: 7px;
+}
+.home .mui-content .businesscoupon ul li p span{
+	margin-right: 20px;
+}
+.home .mui-content .businesscoupon ul li p:last-child{
+	margin-bottom: 0;
+	line-height: 13px;
+}
+.home .scan{
+	position: absolute;
+	height: 70px;
+	width: 70px;
+	bottom: 3%;
+	left: 50%;
+	transform: translate(-50%);
+}
+.home .scan img{
+	width: 100%;
+}
+/* home E */
+
 /* iphone5 S */
 @media only screen and (max-width: 350px) {
 	.login>div>form>.mui-content-padded {
@@ -506,7 +612,27 @@ textarea:-ms-input-placeholder {
 	.forgetPassword>div>.m-btn{
 		top: 45%;
 	}
-
+	.home .mui-content .businessinformation{
+		height: 35%;
+	}
+	.home .mui-content .businesscoupon ul li{
+		padding: 10px 0;
+	}
+	.home .mui-content .businesscoupon ul li div:first-child{
+		padding-left: 30px;
+	}
+	.home .mui-content .businesscoupon ul li h4{
+		font-size: 14px;
+		margin: 0 0 3px 0;
+	}
+	.home .mui-content .businesscoupon ul li p{
+		font-size: 11px;
+		color: #999999;
+		margin-bottom: 3px;
+	}
+	.home .mui-content .businesscoupon ul li p:last-child{
+		margin-bottom: 0;
+	}
 }
 
 /* iphone5 E */
