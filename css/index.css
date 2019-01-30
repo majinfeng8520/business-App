@@ -518,6 +518,7 @@ textarea:-ms-input-placeholder {
 .home .mui-content .businesscoupon ul{
 	padding-left: 0;
 	margin: 0 auto;
+	display: none;
 }
 .home .mui-content .businesscoupon ul li{
 	list-style: none;
@@ -557,6 +558,27 @@ textarea:-ms-input-placeholder {
 .home .mui-content .businesscoupon ul li p:last-child{
 	margin-bottom: 0;
 	line-height: 13px;
+}
+.home .mui-content .businesscoupon > div{
+	width: 100%;
+	padding: 5px;
+}
+.home .mui-content .businesscoupon > div button{
+	text-align: center;
+	background-color: #FFFFFF;
+	padding: 16px 0;
+	border-radius: 4px;
+	box-shadow: 0 3px 4px 0 rgba(0,0,0,0.12);
+}
+.home .mui-content .businesscoupon > div button span{
+	font-size: 33px;
+	color: #999;
+	font-weight: 900;
+}
+.home .mui-content .businesscoupon > div button p{
+	font-size: 14px;
+	color: #999;
+	margin-bottom: 0;
 }
 .home .scan{
 	position: absolute;
@@ -632,6 +654,9 @@ textarea:-ms-input-placeholder {
 	}
 	.home .mui-content .businesscoupon ul li p:last-child{
 		margin-bottom: 0;
+	}
+	.home .mui-content .businesscoupon > div button{
+		padding: 10px 0;
 	}
 }
 
