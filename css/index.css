@@ -48,6 +48,10 @@ textarea:-ms-input-placeholder {
 	color: #111111;
 }
 
+.none {
+	display: none;
+}
+
 /* login S */
 .login {
 	position: relative;
@@ -466,17 +470,19 @@ textarea:-ms-input-placeholder {
 /* replacePassword E */
 
 /* home S */
-.home .mui-bar-nav.mui-bar .mui-icon-plus{
+.home .mui-bar-nav.mui-bar .mui-icon-plus {
 	margin-right: 2px;
 }
-.home .mui-content{
+
+.home .mui-content {
 	padding-top: 0;
 	position: absolute;
 	left: 0;
 	width: 100%;
 	height: 100%;
 }
-.home .mui-content .businessinformation{
+
+.home .mui-content .businessinformation {
 	height: 30%;
 	/* background-image: linear-gradient(-150deg, #F28E4F 0%, #F3385B 100%); */
 	background-image: url(../images/bg-shouye.png);
@@ -484,7 +490,8 @@ textarea:-ms-input-placeholder {
 	background-size: 100% 100%;
 	position: relative;
 }
-.home .mui-content .businessinformation h2{
+
+.home .mui-content .businessinformation h2 {
 	display: inline-block;
 	font-size: 30px;
 	padding: 30px 15px;
@@ -495,7 +502,8 @@ textarea:-ms-input-placeholder {
 	left: 13%;
 	transform: translate(-13%);
 }
-.home .mui-content .businessinformation h1{
+
+.home .mui-content .businessinformation h1 {
 	display: inline-block;
 	font-size: 14px;
 	color: #FFFFFF;
@@ -504,7 +512,8 @@ textarea:-ms-input-placeholder {
 	left: 13%;
 	transform: translate(-13%);
 }
-.home .mui-content .businessinformation p{
+
+.home .mui-content .businessinformation p {
 	margin-bottom: 0;
 	position: absolute;
 	top: 55%;
@@ -512,15 +521,18 @@ textarea:-ms-input-placeholder {
 	transform: translate(-5%);
 	color: #FFFFFF;
 }
-.home .mui-content .businessinformation p strong{
+
+.home .mui-content .businessinformation p strong {
 	font-size: 28px;
 }
-.home .mui-content .businesscoupon ul{
+
+.home .mui-content .businesscoupon ul {
 	padding-left: 0;
 	margin: 0 auto;
 	display: none;
 }
-.home .mui-content .businesscoupon ul li{
+
+.home .mui-content .businesscoupon ul li {
 	list-style: none;
 	margin: 5px;
 	display: flex;
@@ -531,56 +543,69 @@ textarea:-ms-input-placeholder {
 	background-size: 100% 100%;
 	padding: 12px 0;
 }
-.home .mui-content .businesscoupon ul li div{
+
+.home .mui-content .businesscoupon ul li div {
 	display: block;
 }
-.home .mui-content .businesscoupon ul li div:first-child{
+
+.home .mui-content .businesscoupon ul li div:first-child {
 	width: 30%;
 }
-.home .mui-content .businesscoupon ul li div:nth-child(2){
+
+.home .mui-content .businesscoupon ul li div:nth-child(2) {
 	width: 60%;
 }
-.home .mui-content .businesscoupon ul li div:last-child{
+
+.home .mui-content .businesscoupon ul li div:last-child {
 	width: 10%;
 }
-.home .mui-content .businesscoupon ul li h4{
+
+.home .mui-content .businesscoupon ul li h4 {
 	font-size: 14px;
 	margin: 0 0 7px 0;
 }
-.home .mui-content .businesscoupon ul li p{
+
+.home .mui-content .businesscoupon ul li p {
 	font-size: 11px;
 	color: #999999;
 	margin-bottom: 7px;
 }
-.home .mui-content .businesscoupon ul li p span{
+
+.home .mui-content .businesscoupon ul li p span {
 	margin-right: 20px;
 }
-.home .mui-content .businesscoupon ul li p:last-child{
+
+.home .mui-content .businesscoupon ul li p:last-child {
 	margin-bottom: 0;
 	line-height: 13px;
 }
-.home .mui-content .businesscoupon > div{
+
+.home .mui-content .businesscoupon>div {
 	width: 100%;
 	padding: 5px;
 }
-.home .mui-content .businesscoupon > div button{
+
+.home .mui-content .businesscoupon>div button {
 	text-align: center;
 	background-color: #FFFFFF;
 	padding: 16px 0;
 	border-radius: 4px;
-	box-shadow: 0 3px 4px 0 rgba(0,0,0,0.12);
+	box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.12);
 }
-.home .mui-content .businesscoupon > div button span{
+
+.home .mui-content .businesscoupon>div button span {
 	font-size: 33px;
 	color: #999;
 	font-weight: 900;
 }
-.home .mui-content .businesscoupon > div button p{
+
+.home .mui-content .businesscoupon>div button p {
 	font-size: 14px;
 	color: #999;
 	margin-bottom: 0;
 }
-.home .scan{
+
+.home .scan {
 	position: absolute;
 	height: 70px;
 	width: 70px;
@@ -588,10 +613,216 @@ textarea:-ms-input-placeholder {
 	left: 50%;
 	transform: translate(-50%);
 }
-.home .scan img{
+
+.home .scan img {
 	width: 100%;
 }
+
 /* home E */
+
+/* setCoupon S */
+.setCoupon input::-webkit-input-placeholder,
+.setCoupon textarea::-webkit-input-placeholder {
+	color: #CCCCCC;
+}
+
+.setCoupon .mui-bar-nav.mui-bar .mui-icon-plus {
+	margin-right: 2px;
+}
+
+.setCoupon>div>form label,
+.setCoupon>div>form input {
+	padding: 15px 10px;
+	font-size: 17px;
+}
+
+.setCoupon>div>form label {
+	padding-left: 0;
+	color: #000000;
+}
+
+.setCoupon>div>form input {
+	padding: 10px 0;
+	height: 48px;
+}
+
+.setCoupon form {
+	background: #FFFFFF;
+}
+.setCoupon form:first-child{
+	margin-bottom: 10px;
+}
+
+.setCoupon form .mui-input-row {
+	margin: 0 10px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.setCoupon form .mui-input-row:last-child {
+	border-bottom: none;
+}
+
+.setCoupon form .allowance input {
+	width: 20%;
+	float: none;
+}
+
+.setCoupon form .allowance span {
+	color: #000000;
+}
+
+.setCoupon form .full input {
+	width: 11%;
+	float: none;
+}
+
+.setCoupon form .full span {
+	color: #000000;
+}
+
+.setCoupon form span {
+	font-size: 17px;
+}
+
+.setCoupon form .mdata {
+	padding: 0;
+	border: none;
+	font-size: 17px;
+}
+
+.setCoupon form .mdata,
+.setCoupon form span {
+	color: #CCCCCC;
+	text-align: left;
+}
+
+.setCoupon .mui-input-row label {
+	width: 30%;
+}
+
+.setCoupon .mui-input-row div {
+	display: flex;
+	padding: 12px 0;
+	align-items: center;
+}
+
+.setCoupon .mui-input-row div button:first-child:after {
+	content: '至';
+	display: block;
+	color: #000000;
+	position: absolute;
+	right: -30px;
+	top: 0%;
+	transform: translate(-50%);
+}
+
+.setCoupon .mui-input-row div button:last-child {
+	margin-left: 28px;
+}
+
+
+.setCoupon .mui-input-row div button {
+	width: 40%;
+	text-align: left;
+}
+
+.setCoupon .mui-input-row input {
+	width: 70%;
+}
+
+.setCoupon .mui-input-row #showUserPicker {
+	border: none;
+	font-size: 17px;
+	float: none;
+	padding: 15px 0;
+}
+
+.setCoupon .mui-input-row #showUserPicker:after {
+	content: '';
+	display: block;
+	background: url(../images/xiala.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 8px;
+	position: absolute;
+	right: -30px;
+	top: 42%;
+	transform: translate(-50%);
+}
+
+
+
+.setCoupon>div>.mui-content-padded:first-child {
+	margin-bottom: 17px;
+}
+
+.setCoupon form .businessPhone {
+	display: flex;
+}
+
+.setCoupon form .businessPhone label,
+.setCoupon form .businessPhone input {
+	float: none;
+}
+
+.setCoupon form .businessPhone label {
+	width: 30%;
+}
+
+.setCoupon form .businessPhone input {
+	width: 40%;
+}
+
+.setCoupon form .businessPhone button {
+	width: 30%;
+	font-size: 17px;
+	color: #58BC3D;
+	border: none;
+	border-radius: 0;
+	position: relative;
+}
+.setCoupon form .businessPhone button:before {
+	content: '';
+	height: 20px;
+	width: 1px;
+	background: #CCCCCC;
+	display: inline-block;
+	position: absolute;
+	top: 14px;
+	left: 0;
+}
+.setCoupon>div>.m-btn {
+	margin: 0;
+	width: 93%;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+	text-align: center;
+}
+.setCoupon>div>.m-btn span{
+	color: #58BC3D;
+}
+
+.setCoupon>div>.mui-content-padded .mui-btn-block {
+	padding: 11px 0;
+	border-radius: 5px;
+	border: none;
+	background-color: #dbdbdb;
+}
+
+/* 如果填写完毕 按钮使用样式 */
+.setCoupon>div>.mui-content-padded .active{
+	padding: 11px 0;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 6px 7px 0 #E4E4E4;
+	background-image: linear-gradient(0deg, #FFEF3F 0%, #FFFE64 100%);
+}
+
+
+/* setCoupon E */
 
 /* iphone5 S */
 @media only screen and (max-width: 350px) {
@@ -599,13 +830,19 @@ textarea:-ms-input-placeholder {
 		margin: 15px 0 16px 0;
 		border: none;
 	}
+
 	.login>div>form {
 		top: 50%;
 	}
 
 	.register .mui-input-row label,
 	.registerBusiness .mui-input-row label,
-	.forgetPassword .mui-input-row label {
+	.forgetPassword .mui-input-row label ,
+	.setCoupon>div>form label,
+	.setCoupon>div>form input,
+	.setCoupon .mui-input-row #showUserPicker,
+	.setCoupon form span,
+	.setCoupon .mui-input-row div button{
 		font-size: 15px;
 	}
 
@@ -617,47 +854,65 @@ textarea:-ms-input-placeholder {
 	}
 
 	.register form .mui-input-row:first-child button,
-	.forgetPassword form .mui-input-row:first-child button {
+	.forgetPassword form .mui-input-row:first-child button,
+	.setCoupon form .businessPhone button{
 		font-size: 15px;
 	}
 
 	.register>div>form input,
 	.registerBusiness>div>form input,
 	.replacePassword>div>form input,
-	.forgetPassword>div>form input{
+	.forgetPassword>div>form input,
+	.setCoupon>div>form input{
 		height: 44px;
 	}
 
 	.register>div>.m-btn,
 	.registerBusiness>div>.m-btn,
 	.replacePassword>div>.m-btn,
-	.forgetPassword>div>.m-btn{
+	.forgetPassword>div>.m-btn {
 		top: 45%;
 	}
-	.home .mui-content .businessinformation{
+
+	.home .mui-content .businessinformation {
 		height: 35%;
 	}
-	.home .mui-content .businesscoupon ul li{
+
+	.home .mui-content .businesscoupon ul li {
 		padding: 10px 0;
 	}
-	.home .mui-content .businesscoupon ul li div:first-child{
+
+	.home .mui-content .businesscoupon ul li div:first-child {
 		padding-left: 30px;
 	}
-	.home .mui-content .businesscoupon ul li h4{
+
+	.home .mui-content .businesscoupon ul li h4 {
 		font-size: 14px;
 		margin: 0 0 3px 0;
 	}
-	.home .mui-content .businesscoupon ul li p{
+
+	.home .mui-content .businesscoupon ul li p {
 		font-size: 11px;
 		color: #999999;
 		margin-bottom: 3px;
 	}
-	.home .mui-content .businesscoupon ul li p:last-child{
+
+	.home .mui-content .businesscoupon ul li p:last-child {
 		margin-bottom: 0;
 	}
-	.home .mui-content .businesscoupon > div button{
+
+	.home .mui-content .businesscoupon>div button {
 		padding: 10px 0;
 	}
 }
 
 /* iphone5 E */
+
+@media only screen and (min-width: 376px){
+	.setCoupon .mui-input-row div button:first-child:after{
+		right: -20px;
+	}
+	.setCoupon .mui-input-row div button:last-child{
+		margin-left: 20px;
+	}
+}
