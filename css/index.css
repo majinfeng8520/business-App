@@ -470,8 +470,17 @@ textarea:-ms-input-placeholder {
 /* replacePassword E */
 
 /* home S */
-.home .mui-bar-nav.mui-bar .mui-icon-plus {
+.home .mui-bar-nav.mui-bar .m-img:last-child {
 	margin-right: 2px;
+}
+
+.home .mui-bar-nav.mui-bar .m-img {
+	height: 45px;
+	width: 45px;
+}
+
+.home .mui-bar-nav.mui-bar .m-img img {
+	width: 100%;
 }
 
 .home .mui-content {
@@ -488,7 +497,9 @@ textarea:-ms-input-placeholder {
 	background-image: url(../images/bg-shouye.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	position: relative;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
 }
 
 .home .mui-content .businessinformation h2 {
@@ -526,10 +537,16 @@ textarea:-ms-input-placeholder {
 	font-size: 28px;
 }
 
+.home .mui-content .businesscoupon{
+	position: absolute;
+	width: 100%;
+	top: 30%;
+	left: 0;
+}
 .home .mui-content .businesscoupon ul {
 	padding-left: 0;
 	margin: 0 auto;
-	display: none;
+	/* display: none; */
 }
 
 .home .mui-content .businesscoupon ul li {
@@ -606,12 +623,24 @@ textarea:-ms-input-placeholder {
 }
 
 .home .scan {
-	position: absolute;
+	position: fixed;
 	height: 70px;
 	width: 70px;
 	bottom: 3%;
 	left: 50%;
 	transform: translate(-50%);
+}
+
+.home .scan button {
+	padding: 0;
+	background-image: url(../images/saoyisao.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-color: rgba(0, 0, 0, 0);
+	width: 70px;
+	height: 70px;
+	border-radius: 100px;
+	border: none;
 }
 
 .home .scan img {
@@ -649,7 +678,8 @@ textarea:-ms-input-placeholder {
 .setCoupon form {
 	background: #FFFFFF;
 }
-.setCoupon form:first-child{
+
+.setCoupon form:first-child {
 	margin-bottom: 10px;
 }
 
@@ -782,6 +812,7 @@ textarea:-ms-input-placeholder {
 	border-radius: 0;
 	position: relative;
 }
+
 .setCoupon form .businessPhone button:before {
 	content: '';
 	height: 20px;
@@ -792,6 +823,7 @@ textarea:-ms-input-placeholder {
 	top: 14px;
 	left: 0;
 }
+
 .setCoupon>div>.m-btn {
 	margin: 0;
 	width: 93%;
@@ -801,7 +833,8 @@ textarea:-ms-input-placeholder {
 	transform: translate(-50%);
 	text-align: center;
 }
-.setCoupon>div>.m-btn span{
+
+.setCoupon>div>.m-btn span {
 	color: #58BC3D;
 }
 
@@ -813,7 +846,7 @@ textarea:-ms-input-placeholder {
 }
 
 /* 如果填写完毕 按钮使用样式 */
-.setCoupon>div>.mui-content-padded .active{
+.setCoupon>div>.mui-content-padded .active {
 	padding: 11px 0;
 	border-radius: 5px;
 	border: none;
@@ -837,12 +870,12 @@ textarea:-ms-input-placeholder {
 
 	.register .mui-input-row label,
 	.registerBusiness .mui-input-row label,
-	.forgetPassword .mui-input-row label ,
+	.forgetPassword .mui-input-row label,
 	.setCoupon>div>form label,
 	.setCoupon>div>form input,
 	.setCoupon .mui-input-row #showUserPicker,
 	.setCoupon form span,
-	.setCoupon .mui-input-row div button{
+	.setCoupon .mui-input-row div button {
 		font-size: 15px;
 	}
 
@@ -855,7 +888,7 @@ textarea:-ms-input-placeholder {
 
 	.register form .mui-input-row:first-child button,
 	.forgetPassword form .mui-input-row:first-child button,
-	.setCoupon form .businessPhone button{
+	.setCoupon form .businessPhone button {
 		font-size: 15px;
 	}
 
@@ -863,7 +896,7 @@ textarea:-ms-input-placeholder {
 	.registerBusiness>div>form input,
 	.replacePassword>div>form input,
 	.forgetPassword>div>form input,
-	.setCoupon>div>form input{
+	.setCoupon>div>form input {
 		height: 44px;
 	}
 
@@ -876,6 +909,9 @@ textarea:-ms-input-placeholder {
 
 	.home .mui-content .businessinformation {
 		height: 35%;
+	}
+	.home .mui-content .businesscoupon{
+		top: 35%;
 	}
 
 	.home .mui-content .businesscoupon ul li {
@@ -908,11 +944,12 @@ textarea:-ms-input-placeholder {
 
 /* iphone5 E */
 
-@media only screen and (min-width: 376px){
-	.setCoupon .mui-input-row div button:first-child:after{
+@media only screen and (min-width: 376px) {
+	.setCoupon .mui-input-row div button:first-child:after {
 		right: -20px;
 	}
-	.setCoupon .mui-input-row div button:last-child{
+
+	.setCoupon .mui-input-row div button:last-child {
 		margin-left: 20px;
 	}
 }
